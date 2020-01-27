@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="login-form">
+    <h2>Sign in to Your Account</h2>
+    <form >
+        <div class="text-center">
+            
+        </div>        
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email" required="required" [(ngModel)] = "user" name = "user">
+            <input type="password" class="form-control" placeholder="Password" required="required">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block"  (click)="btnClick();">Sign in</button>
+        </div>       
+    </form>
+</div>

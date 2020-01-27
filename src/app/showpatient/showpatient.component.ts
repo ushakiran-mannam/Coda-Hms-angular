@@ -35,6 +35,7 @@ export class ShowpatientComponent implements OnInit {
     if(response.status == 200)
     { console.log(response);
       this.isdeleted = true;
+      this.showPatient();
     }
   }
   )
@@ -46,6 +47,7 @@ export class ShowpatientComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.showPatient();
   }
 
 

@@ -8,6 +8,7 @@ pipeline {
             label 'aws_node_two'
         }
     }
+    tools {nodejs "nodejs"}
 
     stages {
 

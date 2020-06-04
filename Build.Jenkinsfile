@@ -8,7 +8,9 @@ pipeline {
             label 'aws_node_two'
         }
     }
-    tools {nodejs "nodejs"}
+    environment {
+      TOOL = tool name: 'nodejs', type:     'com.cloudbees.jenkins.plugins.customtools.CustomTool'
+  }
 
     stages {
 

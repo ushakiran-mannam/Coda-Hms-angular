@@ -23,7 +23,8 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh "ls"
+                sh "npm install"
+                sh "ng build"
             }
         }    
     }
